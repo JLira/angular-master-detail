@@ -1,6 +1,8 @@
 import { InMemoryDbService, RequestInfo } from "angular-in-memory-web-api";
 import { Observable } from "rxjs";
 
+import { Category } from "./pages/categories/shared/category.model";
+
 export class InMemoryDatabase implements InMemoryDbService {
   createDb() {
     const categories = [
